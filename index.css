@@ -1,0 +1,94 @@
+/* *{
+   
+} */
+
+.container{
+    /* max-width: 700px; */
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.main-heading{
+    text-align: center;
+    margin: 17px;
+    padding: 20px;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.app-container{
+    
+}
+
+.main-content{
+    text-align: center;
+}
+
+.main-field{
+    padding: 15px;
+    font-size: larger;
+    font-family: sans-serif; 
+}
+
+.add-btn input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.add-btn :active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.add-btn :hover{
+    background-color: green;
+  }
+
+input{
+    padding: 5px;
+    border-radius: 7px;
+}
+
+select{
+    padding: 5px;
+    border-radius: 7px;
+}
+
+option{
+    font-size: medium;
+}
+
+h2{
+   text-align: center;
+}
+
+table,th,td{
+    border: 7px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.delete-btn input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.delete-btn :active{
+    /* background-color: #3e8e41; */
+    box-shadow: 0 5px black;
+    transform: translateY(0.5px);
+}
+
+.delete-btn :hover{
+    background-color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+        <script src="controller.js"></script>
+        <script src="memberservice.js"></script>
+        <!-- <script src="server/server.js"></script> -->
+ 
+    </head>
+
+    <body>
+        <div class="container">
+            <div ng-app='myApp' ng-controller='MyController'>
+                <h1 class="main-heading">Society Rennovation</h1>
+                <div class="app-container">
+                    <div class="main-content">
+                        <div class="main-field">
+                            <label>Member Name : </label>
+                            <input type="text" ng-model="name">
+                        </div>
+                        <div class="main-field">
+                            <label>Phone Number : </label>
+                            <input type="text" ng-model='phone'>
+                        </div>
+                        <div class="main-field">
+                            <label>Email : </label>
+                            <input type="email" ng-model='email'>
+                        </div>
+                        <div class="main-field">
+                            <label>Fund Status : </label>
+                            <select ng-model='status'>
+                                <option value="Paid">Paid</option>
+                                <option value="Unpaid">Unpaid</option>
+                            </select>
+                        </div>
+                        <div class="add-btn">
+                            <input type="submit" value='ADD' ng-click='insertOnclick()'>
+                        </div>
+                    </div>
+                    <h2>Details</h2>
+                    <div>
+                     <table>
+                         <tr>
+                            <th>Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Delete Record</th>
+                         </tr>
+                         <tr ng-repeat='x in member'>
+                             <th>{{x.member_name}}</th>
+                             <th>{{x.member_phone}}</th>
+                             <th>{{x.member_email}}</th>
+                             <th>{{x.member_status}}</th>
+                             <th class="delete-btn">
+                                 <input type="submit" value="Delete" ng-click='deleteOnclick(x.id)'>
+                             </th>
+                         </tr>
+                     </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
